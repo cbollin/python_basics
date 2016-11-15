@@ -48,29 +48,29 @@
 # my_list[2](5)
 # # passing 5 into our lambda
 #
-# def invoker(callback):
-#     print callback(2)
-# invoker(lambda x: 2*x)
-# invoker(lambda y: 3+y)
-# # passing the argument 2 into the lambda
-#
-# add10 = lambda x:x+10
-# add10(2)
-# # returns 12, simply storing a lambda in a variable
-# print add10(2)
-#
-# def incrementor(num):
-#     start = num
-#     return lambda x:num+x
-# print incrementor(5)
-# # returns the lambda function
-#
-# my_arr = [1,2,3]
-#
-# def square(num):
-#     return num ** 2
-# map(square, my_arr)
-#
-# # can also be written as
-# my_arr = [1,2,3]
-# map(lambda x:x**2, my_arr)
+def invoker(callback):
+    print callback(2)
+invoker(lambda x: 2*x)
+invoker(lambda y: 3+y)
+# passing the argument 2 into the lambda
+
+add10 = lambda x:x+10
+add10(2)
+# returns 12, simply storing a lambda in a variable
+print add10(2)
+
+def incrementor(num):
+    start = num
+    return lambda x:num+x
+print incrementor(5)
+# returns the lambda function
+
+my_arr = [1,2,3]
+
+def square(num):
+    return num ** 2
+map(square, my_arr)
+
+# can also be written as
+my_arr = [1,2,3]
+map(lambda x:x**2, my_arr)
